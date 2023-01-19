@@ -1,0 +1,45 @@
+entry_point {
+    characters {
+        name: str
+        full_name: str
+        gender: "male" | "female" | str
+        age: str
+        species: str
+        family: str
+        connections {
+            friends: str[]
+            enemies: str[]
+            relatives: str[]
+        }
+        first_appearance {
+            title: str
+            episode_no: int
+            air_dates: str
+        }
+        quotes {
+            quote: str
+                to_character: str
+            citation {
+                episode {
+                    title: str
+                    season_no: int
+                    episode_no: int
+                }
+            }
+        }
+    }
+    episodes {
+        type: "episode" | "special"
+        title: str
+        season_no: int
+        episode_no: int
+        episode_overall: int
+        air_dates: str
+        prod_code: str
+        details {
+            directed: str
+            wirtten: str
+            storyboard: str
+        }
+    }
+}
