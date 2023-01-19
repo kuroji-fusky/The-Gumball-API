@@ -5,7 +5,7 @@ The Amazing World of Gumball.
 
 
 
-# Technology stack
+## Technology stack
 
 The Gumball/Wattersons is written entirely in Python with the FastAPI web
 framework.
