@@ -12,6 +12,6 @@ Hosting the actual API is currently out of my budget at this point of time; but 
 we're to host it at some point - it would be the help from Supabase and Cloudflare
 caching.
 
-### License
+## License
 
 MIT
