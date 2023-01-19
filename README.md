@@ -5,6 +5,8 @@ show "The Amazing World of Gumball".
 
 ## Technology stack
 
+[![Tech Stack](https://skillicons.dev/icons?i=py,fastapi,graphql,postgres,supabase,cloudflare)](https://skillicons.dev)
+
 The Gumball API is written entirely in Python with the FastAPI web
 framework.
 
