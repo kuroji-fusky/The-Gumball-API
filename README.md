@@ -1,6 +1,7 @@
 # Wattersons API
 
-The Gumball/Wattersons API is an open-source REST and GraphQL API for the
+The Gumball/Wattersons API is an open-source REST and GraphQL API for 
+The Amazing World of Gumball.
 
 
 
