@@ -1,6 +1,6 @@
 # The Gumball API
 
-The Gumball API is an open-source REST and GraphQL API based from the
+The Gumball API is an open source REST and GraphQL API based from the
 show "The Amazing World of Gumball".
 
 ## Technology stack
