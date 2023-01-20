@@ -1,5 +1,8 @@
 # The Gumball API
 
+> **Note**
+> Project still under construction, not production-ready yet!
+
 The Gumball API is an open source REST and GraphQL API based from the
 show "The Amazing World of Gumball".
 
