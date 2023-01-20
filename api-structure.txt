@@ -18,7 +18,10 @@ entry_point {
         }
         quotes {
             quote: str
-                to_character: str
+            to_character: {
+                name: str
+                character_endpoint: https://gumball.kurofusky.xyz/character{/name}?q={query}{&filter_stuff}
+            }
             citation {
                 episode {
                     title: str
@@ -41,5 +44,9 @@ entry_point {
             wirtten: str
             storyboard: str
         }
+        character_appearances [{
+            name: str
+            character_endpoint: https://gumball.kurofusky.xyz/character{/name}?q={query}{&filter_stuff}
+        }]
     }
 }
