@@ -4,19 +4,29 @@
 > Project still under construction, not production-ready yet!
 
 The Gumball API is an open source REST and GraphQL API based from the
-show "The Amazing World of Gumball".
+show "The Amazing World of Gumball" from Cartoon Network.
+
+Inspired by [PokéAPI](https://pokeapi.co/about) and [swapi](https://swapi.dev/about)!
+
+## Endpoints
+| Endpoint      | Description                                              |
+|:--------------|:---------------------------------------------------------|
+| `/episodes`   | Lists all the episodes from the show, including specials |
+| `/characters` | Lists all the characters from the show                   |
+| `/family`     | Lists all the families from the show                     |
 
 ## Technology stack
 
-[![Tech Stack](https://skillicons.dev/icons?i=py,fastapi,graphql,postgres,supabase,cloudflare)](https://skillicons.dev)
+[![Tech Stack](https://skillicons.dev/icons?i=py,fastapi,graphql,cloudflare)](https://skillicons.dev)
 
-The Gumball API is written entirely in Python with the FastAPI web
-framework.
+The Gumball API is built with FastAPI, all responses are formatted in JSON.
 
-Hosting the actual API is currently out of my budget at this point of time; but if I
-we're to host it at some point - it would be the help from Supabase and Cloudflare
-caching.
+## Legal stuff
 
-## License
+*The Amazing World of Gumball* and all its assets are trademarks of
+Turner Broadcasting System, Inc.
 
-MIT
+All data is sourced from [*The Amazing World of Gumball Wiki*][wiki] and the
+project's source code is completely open source under the MIT license.
+
+[wiki]: https://theamazingworldofgumball.fandom.com

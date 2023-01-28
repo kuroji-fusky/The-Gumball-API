@@ -5,29 +5,22 @@ entry_point {
         gender: "male" | "female" | str
         age: str
         species: str
-        family: str
+        family: https://gumball.kurofusky.xyz/family{/family_name}?q={query}{&filter_stuff}
         connections {
-            friends: str[]
-            enemies: str[]
-            relatives: str[]
+            friends: str[] >> character_endpoint: https://gumball.kurofusky.xyz/character{/name}?q={query}{&filter_stuff}
+            enemies: str[] >> character_endpoint: https://gumball.kurofusky.xyz/character{/name}?q={query}{&filter_stuff}
+            relatives: str[] >> character_endpoint: https://gumball.kurofusky.xyz/character{/name}?q={query}{&filter_stuff}
         }
         first_appearance {
-            title: str
-            episode_no: int
-            air_dates: str
+            episode_endpoint: https://gumball.kurofusky.xyz/episode{/name}?q={query}{&filter_stuff}
         }
         quotes {
             quote: str
             to_character: {
-                name: str
                 character_endpoint: https://gumball.kurofusky.xyz/character{/name}?q={query}{&filter_stuff}
             }
             citation {
-                episode {
-                    title: str
-                    season_no: int
-                    episode_no: int
-                }
+                episode_endpoint: https://gumball.kurofusky.xyz/episode{/name}?q={query}{&filter_stuff}
             }
         }
     }
@@ -45,7 +38,6 @@ entry_point {
             storyboard: str
         }
         character_appearances [{
-            name: str
             character_endpoint: https://gumball.kurofusky.xyz/character{/name}?q={query}{&filter_stuff}
         }]
     }
