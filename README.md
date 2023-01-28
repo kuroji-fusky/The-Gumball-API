@@ -36,21 +36,21 @@ Response (truncated for brevity):
   "species": "Cat",
   "family": "Wattersons",
   "relatives": [
-    "https://tawog-api.kurofusky.api/character/darwin",
-    "https://tawog-api.kurofusky.api/character/anais",
-    "https://tawog-api.kurofusky.api/character/nicole",
+    "https://tawog-api.kurofusky.xyz/character/darwin",
+    "https://tawog-api.kurofusky.xyz/character/anais",
+    "https://tawog-api.kurofusky.xyz/character/nicole",
     "..."
   ],
   "friends": [
-    "https://tawog-api.kurofusky.api/character/darwin",
-    "https://tawog-api.kurofusky.api/character/penny",
-    "https://tawog-api.kurofusky.api/character/carrie",
+    "https://tawog-api.kurofusky.xyz/character/darwin",
+    "https://tawog-api.kurofusky.xyz/character/penny",
+    "https://tawog-api.kurofusky.xyz/character/carrie",
     "..."
   ],
   "enemies": [
-    "https://tawog-api.kurofusky.api/character/rob",
-    "https://tawog-api.kurofusky.api/character/miss_simian",
-    "https://tawog-api.kurofusky.api/character/jamie",
+    "https://tawog-api.kurofusky.xyz/character/rob",
+    "https://tawog-api.kurofusky.xyz/character/miss_simian",
+    "https://tawog-api.kurofusky.xyz/character/jamie",
     "..."
   ],
   "first_appearance": "https://tawog-api.kurofusky.xyz/episode/the-dvd",
