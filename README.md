@@ -8,9 +8,9 @@
 > Project still under construction, not production-ready yet!
 
 The Gumball API is an open source REST and GraphQL API based from the
-show "The Amazing World of Gumball" from Cartoon Network.
+show *The Amazing World of Gumball* from Cartoon Network.
 
-Inspired by [PokéAPI](https://pokeapi.co/about) and [swapi](https://swapi.dev/about)!
+Project inspired by [PokéAPI](https://pokeapi.co/about) and [swapi](https://swapi.dev/about)!
 
 ## Planned endpoints
 | Endpoint                | Description                                                        |
@@ -26,12 +26,12 @@ Inspired by [PokéAPI](https://pokeapi.co/about) and [swapi](https://swapi.dev/a
 
 ### `/character{/name}`
 
-Request:
+**Request**:
 ```
-https://tawog-api.kurofusky.xyz/character/gumball
+GET /character/gumball
 ```
 
-Response (truncated for brevity):
+**Response** (truncated for brevity):
 ```json
 {
   "name": "Gumball Watterson",
@@ -40,25 +40,25 @@ Response (truncated for brevity):
   "species": "Cat",
   "family": "Wattersons",
   "relatives": [
-    "https://tawog-api.kurofusky.xyz/character/darwin",
-    "https://tawog-api.kurofusky.xyz/character/anais",
-    "https://tawog-api.kurofusky.xyz/character/nicole",
+    "/character/darwin",
+    "/character/anais",
+    "/character/nicole",
     "..."
   ],
   "friends": [
-    "https://tawog-api.kurofusky.xyz/character/darwin",
-    "https://tawog-api.kurofusky.xyz/character/penny",
-    "https://tawog-api.kurofusky.xyz/character/carrie",
+    "/character/darwin",
+    "/character/penny",
+    "/character/carrie",
     "..."
   ],
   "enemies": [
-    "https://tawog-api.kurofusky.xyz/character/rob",
-    "https://tawog-api.kurofusky.xyz/character/miss_simian",
-    "https://tawog-api.kurofusky.xyz/character/jamie",
+    "/character/rob",
+    "/character/miss_simian",
+    "/character/jamie",
     "..."
   ],
-  "first_appearance": "https://tawog-api.kurofusky.xyz/episode/the-dvd",
-  "quotes": "https://tawog-api.kurofusky.xyz/quotes/gumball"
+  "first_appearance": "/episode/the-dvd",
+  "quotes": "/quotes/gumball"
 }
 ```
 
