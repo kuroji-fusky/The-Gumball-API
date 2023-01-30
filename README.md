@@ -1,4 +1,8 @@
+![gumball-api-banner](https://user-images.githubusercontent.com/94678583/215496765-7b90d67f-27cf-427b-8fdb-9abf8acb150a.png)
+
 # The Gumball API
+
+![](https://img.shields.io/github/license/kuroji-fusky/The-Gumball-API)
 
 > **Note**
 > Project still under construction, not production-ready yet!
