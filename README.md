@@ -39,26 +39,29 @@ GET /character/gumball
   "gender": "Male",
   "species": "Cat",
   "family": "Wattersons",
+  "first_appearance": {
+    "episode_title": "The DVD",
+    "episode_url": "/episode/the-dvd"
+  },
   "relatives": [
-    "/character/darwin",
-    "/character/anais",
-    "/character/nicole",
-    "..."
+    {
+      "name": "Darwin Watterson",
+      "character_url": "/character/darwin"
+    }
   ],
   "friends": [
-    "/character/darwin",
-    "/character/penny",
-    "/character/carrie",
-    "..."
+    {
+      "name": "Penny Fitzgerald",
+      "character_url": "/character/penny"
+    }
   ],
   "enemies": [
-    "/character/rob",
-    "/character/miss_simian",
-    "/character/jamie",
-    "..."
+    {
+      "name": "Rob",
+      "character_url": "/character/rob"
+    }
   ],
-  "first_appearance": "/episode/the-dvd",
-  "quotes": "/quotes/gumball"
+  "quotes_url": "/quotes/gumball"
 }
 ```
 
