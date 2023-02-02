@@ -6,5 +6,5 @@ app = FastAPI()
 
 
 @app.get("/")
-async def read_root():
+async def get_root():
     return {"message": "Hellow world"}
