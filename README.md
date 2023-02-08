@@ -16,13 +16,12 @@ Project inspired by [PokéAPI](https://pokeapi.co/about) and [swapi](https://swa
 | Endpoint                | Description                                                        |
 |:------------------------|:-------------------------------------------------------------------|
 | `/episodes`             | Lists all the episodes from the show, including specials           |
-| `/episode{/episode}`    | Sends a response of an episode name, season, and other information |
-| `/transcript{/episode}` | Gets a JSON response of a transcribed episode                      |
-| `/season{/1..6}`        | Lists all the episodes from that season                            |
+| `/episode/:episode`     | Sends a response of an episode name, season, and other information |
+| `/transcript/:episode`  | Gets a JSON response of a transcribed episode                      |
+| `/season/:1..6`         | Lists all the episodes from that season                            |
 | `/characters`           | Lists all the characters from the show                             |
-| `/character{/name}`     | Sends a response a character from a show                           |
-| `/quotes{/name}`        | Sends a response of all the characters' quotes                     |
-| `/families`             | Lists all the families from the show                               |
+| `/character/:name`      | Sends a response a character from a show                           |
+| `/quotes/:name`         | Sends a response of all the characters' quotes                     |
 
 ### `/character{/name}`
 
@@ -64,7 +63,6 @@ GET /character/gumball
   "quotes_url": "/quotes/gumball"
 }
 ```
-
 
 ## Technology stack
 
