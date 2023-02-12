@@ -6,13 +6,14 @@ import json
 
 def main():
 	temp_list: list[dict[str, str]] = []
-	alphabet_list = [chr(x).upper() for x in range(97, 123)]
+	characters_list: list[dict[str, str]] = []
+	alphabet_list: list[str] = [chr(x).upper() for x in range(97, 118)]
 	
 	try:
-		print("cache.json found, appending data...")
+		with open("cache.json", 'r') as f:
+			temp_list = json.load(f)["characters"]
 		
-		with open("cache.json", 'r') as fuck:
-			temp_list = json.load(fuck)["characters"]
+		print("cache.json found, appending data...")
 	
 	except FileNotFoundError:
 		print("cache.json not found, will generate anyway")
@@ -32,19 +33,23 @@ def main():
 		with open("cache.json", "a+") as f:
 			json.dump({'characters': temp_list}, f, indent=4, ensure_ascii=True)
 	
-	prefixes = ["/Enemies", "/People", "Character", "Category:", "Thread:"]
+	prefixes = ["/Enemies", "/People", "/Objects", "Character", "Category:", "Thread:"]
 	categories = ["parents", "family", "shareholders", "babies", "guards", "clones", "lookalike"]
 	
 	regex_filter = rf"({')|('.join([*prefixes, *categories])})"
 	
 	for char in temp_list:
 		name = char["name"]
+		url = char["url"]
 		matches = re.findall(regex_filter, name, re.IGNORECASE)
 		
 		if not matches:
-			print(f"[YES] {name}")
-		else:
-			print(f"[---] {name}")
+			characters_list.append({
+				'name': name,
+				'url': url
+			})
+	
+	print(characters_list)
 
 
 if __name__ == "__main__":
