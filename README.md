@@ -8,7 +8,7 @@
 > Project still under construction, not production-ready yet!
 
 The Gumball API is an open source REST and GraphQL API based from the
-show *The Amazing World of Gumball* from Cartoon Network, written in Python.
+show *The Amazing World of Gumball* from Cartoon Network, written in Go and Python.
 
 Project inspired by [PokéAPI](https://pokeapi.co/about) and [swapi](https://swapi.dev/about)!
 
